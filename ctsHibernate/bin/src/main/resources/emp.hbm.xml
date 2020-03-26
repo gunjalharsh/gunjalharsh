@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    
+    
+    <!-- datatypes here are HBM types not java or mysql datatypes -->
+    <!-- if not exits then frameworks automatically creates -->
+    <hibernate-mapping>
+    <class name="com.pojo.Emp_POJO" table="cts_empdemo">
+    <id name="Empno" type="int" column="eno"/>
+    <property name="Empname" column="name"/>
+    <property name="Salary" column="salary" type="java.lang.Float"/>
+    
+    
+    </class>
+    </hibernate-mapping>

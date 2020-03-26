@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+
+		
+		
+		<bean id="stud" class="com.homeMain.Student">
+		
+		<property name="sid" value="2001"></property>
+		<property name="name" value="Rahul"></property>
+		
+		</bean>
+		
+		<bean id="course1" class="com.homeMain.Student_course" parent="stud">
+		
+		<property name="name" value="Sahil"></property>
+		<property name="cid" value="2002"></property>
+		<property name="cname" value="Kartik"></property>
+		
+		</bean>
+		
+		
+		
+</beans>
